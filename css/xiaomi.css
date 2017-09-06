@@ -2,15 +2,15 @@
 * @Author: Administrator
 * @Date:   2017-08-29 17:55:32
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-09-03 10:57:08
+* @Last Modified time: 2017-09-06 21:42:50
 */
 @font-face {
   font-family: 'iconfont';  /* project id 401111 */
-  src: url('http://at.alicdn.com/t/font_401111_ctx27tyv9eunb3xr.eot');
-  src: url('http://at.alicdn.com/t/font_401111_ctx27tyv9eunb3xr.eot?#iefix') format('embedded-opentype'),
-  url('http://at.alicdn.com/t/font_401111_ctx27tyv9eunb3xr.woff') format('woff'),
-  url('http://at.alicdn.com/t/font_401111_ctx27tyv9eunb3xr.ttf') format('truetype'),
-  url('http://at.alicdn.com/t/font_401111_ctx27tyv9eunb3xr.svg#iconfont') format('svg');
+  src: url('http://at.alicdn.com/t/font_401111_mkou7z1g2ox39pb9.eot');
+  src: url('http://at.alicdn.com/t/font_401111_mkou7z1g2ox39pb9.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_401111_mkou7z1g2ox39pb9.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_401111_mkou7z1g2ox39pb9.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_401111_mkou7z1g2ox39pb9.svg#iconfont') format('svg');
 }
 
 
@@ -100,10 +100,71 @@
 .shousuo{
 	width: 296px;
 	height: 50px;
-	background: black;
 	float: right;
 	margin-top: 25px;
+	position: relative;
 }
+.shousuokuang-1{
+	width: 223px;
+	height: 48px;
+	padding: 0 10px;
+	border: 1px solid #e0e0e0;
+	font-size: 14px;
+	position: absolute;
+	top: 0 ;
+
+}
+.shousuokuang-2{
+	height: 21px;
+	position: absolute;
+	top: 14px;
+	left:  62px;
+}
+
+.hongmixiaohuang{
+	height: 21px;
+	background-color: #eee;
+	padding: 0 5px;
+	margin-left: 5px;
+	color: #757575 ;
+	font-size: 12px;
+	line-height: 18px;
+	float: left;
+}
+.hongmixiaohuang:hover{
+	background-color: orange;
+}
+
+.xiaomimaxkuang{
+	height: 21px;
+	background-color: #eee;
+	padding:0 5px;
+	margin-left: 10px;
+	font-size: 12px;
+	color: #757575 ;
+	float: left;
+}
+.xiaomimaxkuang:hover{
+	background-color: orange;
+}
+.fangdajing{
+	width:50px;
+	height: 48px;
+	background-color:#ffffff;
+	position: absolute;
+	top:-1px;
+	right:-52px;
+	border: 1px solid #e0e0e0;
+}
+.fangdajing i{
+	font-size: 21px;
+	line-height: 48px;
+	margin-left: 19px;
+}
+.fangdajing i:hover{
+	background-color: orange;
+}
+
 .head-wenzi a{
 	color: #333;
 }
@@ -151,31 +212,46 @@
 	padding-top: 20px;
 }
 .shoujidianhuaka{
-	width: 204px;
+	width: 186px;
 	height: 42px;
-	padding-left: 30px;
+	padding-left: 24px;
+	padding-right: 24px;
 	line-height: 42px;
 	font-size: 14px;
-	text-align: center;
 	color: #fff;
+}
+.shoujidianhuaka:hover{
+	background-color: orange;
+}
+.shoujidianhuaka:hover span{
+	color: #000;
+}
+.shoujidianhuaka span:nth-child(1){
+	float: left;
+}
+.shoujidianhuaka span:nth-child(2){
+	float: right;
 }
 .lunbojian{
 	position: absolute;
 	width: 41px;
 	height: 69px;
-	background-color: gold;
-	background-color: rgba(0, 0, 0, 0.5);
+	
 	top: 195.5px;
 	left: 234px;
+}
+.lunbojian:hover{
+	background-color: orange;
 }
 .lunbojian-1{
 	position: absolute;
 	width: 41px;
 	height: 69px;
-	background-color: gold;
-	background-color: rgba(0, 0, 0, 0.5);
 	top: 195.5px;
 	right: 0px;
+}
+.lunbojian-1:hover{
+	background-color: orange;
 }
 .lunbojian i{
 	font-size: 40px;
@@ -209,11 +285,14 @@
 	font-size: 12px;
 	text-align: center;
 	line-height: 18px;
+	border-radius: 50%;
+}
+.lunboxiaokuang i:hover{
+	background-color: orange;
 }
 #shoujiguanggao{
 	width: 1226px;
 	height: 170px;
-	background-color: greenyellow;
 	margin: 0 auto;
 }
 .iakangjihe{
@@ -226,13 +305,13 @@
 	width: 70px;
 	height: 64px;
 	padding: 21px 4px 0px;
-	background-color: yellowgreen;
+	background-color:#5f5750;
 	float: right;
 }
 .icon{
 	width: 70px;
 	height: 24px;
-	background-color: red;
+	background-color:#5f5750;
 	float: right;
 }
 .icon i{
@@ -241,10 +320,17 @@
 	color: #cdcac8;
 	margin-left: 23px;
 }
+.icon i:hover{
+	background-color: orange;
+}
 .xiaoaikang h1{
 	font-size: 12px;
 	text-align: center;
 	margin-top: 2px;
+	color: white;
+}
+.xiaoaikang h1:hover{
+	background-color:orange;
 }
 .icon-houtu{
 	width: 316px;
@@ -256,14 +342,13 @@
 #danpin{
 	width: 1226px;
 	height: 438px;
-	background-color: yellowgreen;
+	
 	margin: 0 auto;
 	margin-top: 26px;
 }
 .danpin-top{
 	width: 1226px;
 	height: 58px;
-	background-color: pink;
 }
 .danpin-top h1{
 	font-size: 22px;
@@ -274,13 +359,33 @@
 .gouwuche i{
 	line-height: 40px;
 }
-.danpin-anniu{
-	width: 70px;
-	height: 25px;
-	background-color: #2df;
+.danpin-anniu1{
+	width: 32px;
+	height: 22px;
+	background-color:white;
 	float: right; 
 	margin-top: 23px;
+	border: 1px solid  #e0e0e0;
 }
+.danpin-anniu1 i{
+	font-size:20px;
+	margin-left: 7px;
+	color: #e0e0e0;
+}
+.danpin-anniu2{
+	width: 32px;
+	height: 22px;
+	background-color:white;
+	float: right; 
+	margin-top: 23px;
+	border:  1px solid #e0e0e0;
+}
+.danpin-anniu2 i{
+	font-size:20px;
+	margin-left: 7px;
+	color: #e0e0e0;
+}
+
 .danpin-bottom{
 	width: 1226px;
 	height: 380px;
@@ -329,14 +434,12 @@
 #jiadian{
 	width: 1226px;
 	height: 732px;
-    background-color:yellowgreen;
     margin: 0 auto;
     margin-top: 78px;
 }
 .jiadian-top{
 	width: 1226px;
 	height: 118px;
-	background-color: pink;
 }
 .jiadian-top h1{
 	font-size: 20px;
@@ -874,6 +977,10 @@
 	margin-top: 15px;
 	background-color: red;
 }
+
+
+
+
 .tushu1{
 	margin-right: 0px;
 }
