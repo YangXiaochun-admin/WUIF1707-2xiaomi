@@ -14,6 +14,14 @@
   url('http://at.alicdn.com/t/font_401029_kx3n4bifbdl5wmi.ttf') format('truetype'),
   url('http://at.alicdn.com/t/font_401029_kx3n4bifbdl5wmi.svg#iconfont') format('svg');
 }
+@font-face {
+  font-family: 'iconfont';  /* project id 401031 */
+  src: url('http://at.alicdn.com/t/font_401031_g7p5sk2fge8hyqfr.eot');
+  src: url('http://at.alicdn.com/t/font_401031_g7p5sk2fge8hyqfr.eot?#iefix') format('embedded-opentype'),
+  url('http:/at.alicdn.com/t/font_401031_g7p5sk2fge8hyqfr.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_401031_g7p5sk2fge8hyqfr.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_401031_g7p5sk2fge8hyqfr.svg#iconfont') format('svg');
+}
 .iconfont{
 	font-family: "iconfont"!important;
 	font-size: 16px;
@@ -21,6 +29,9 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+.head-neikuan a:link{color:#b0b0b0;}
+.head-neikuan a:visited{color:#b0b0b0;}
+.head-neikuan a:hover{color:#fff;}
 
 #head{
 	width: 100%;
@@ -68,90 +79,68 @@
 	line-height: 40px;
 }
 
-
+.daohang-wenzi a:visited{color:#333333;}
+.daohang-wenzi a:hover{color:orange;}
 
 #daohang{
-	width: 100%;
-	height: 101px;
-	background-color: #ffffff;
-}
-.kuang{
 	width: 1226px;
-	height: 101px;
+	height: 100px;
 	background-color: #ffffff;
 	margin: 0 auto;
+	overflow: hidden;
 }
-.tupian1{
+.tubiao{
 	width: 55px;
 	height: 55px;
-	background-color: red;
+	background-color: orangered;
+	margin-top: 22px;
 	float: left;
-	margin-top: 23px;
-	background-image: url('../img/1.png');
 	background-size: 100%;
+	background-image: url('../img/1.png');
+	background-repeat: no-repeat;
 }
-.kuang1{
-	height: 101px;
+.daohang-wenzi{
+	height: 17px;
 	background-color: #ffffff;
+	margin-top: 41px;
+	margin-left: 189px;
 	float: left;
-	margin-left: 188px;
 }
-.zi2{
-	float: left;
-	line-height: 101px;
-	font-size: 15px;
-	color: #333333;
-	margin-right: 20px;
-}
-.zi3{
-	margin-right: 0;
-}
-.kuang3{
-	width: 294px;
+.daohang-sousuo{
+	width: 243px;
 	height: 48px;
-	float: right;
-	background-color: #ffffff;
-	margin-top: 26px;
-	margin-left: 50px;
-	border: 1px #e0e0e0 solid;
-}
-.photo1{
-	width: 78px;
-	height: 18px;
-	background-color: #eeeeee;
-	float:left;
-	margin-right: 5px;
-	margin-left: 83px;
-	margin-top: 15px;
-}
-.zi4{
-	font-size: 11px;
-	line-height: 18px;
-	color: #757575;
-}
-.photo2{
-	width: 67px;
-	height: 18px;
-	background-color: #eeeeee;
 	float: left;
-	margin-right: 10px;
-	margin-top: 15px;
-}
-.zi5{
-	font-size: 11px;
-	line-height: 18px;
-	color: #757575;
+	border: 0;
 }
 .sousuo{
+	background-color: #ffffff;
+	float: right;
+	margin-top: 26px;
+	border: 1px #e0e0e0 solid;
+}
+.sousuotubiao{
 	width: 50px;
 	height: 48px;
 	background-color: #ffffff;
 	float: right;
 	border-left: 1px #e0e0e0 solid;
 }
-.sousuo i{
+.sousuo div:hover{background-color:#ff6700}
+.sousuotubiao i{
 	line-height: 48px;
-	margin-left: 17px;
+	margin-left: 17px; 
+}
+.wenzi{
+	height: 17px;
+	float: left;
+	line-height: 17px;
+
+}
+.wenzi1{
+	margin-left: 20px;
+}
+.wenzi2{
+	margin-right: 0;
 }
 /* .head-wenzi a{
 	color: #b0b0b0;
@@ -168,66 +157,99 @@
 .head-wenzi a:active{
 	color: yellowgreen;
 } */
-#bann{
-	width: 1226px;
+#banner{
+    width: 1226px;
 	height: 460px;
-	background-color: yellowgreen;
-	margin: 0 auto;
-	margin-top: 23px;
+	background-color: purple;
 	position: relative;
-
+	margin: 0 auto;
 }
-.bann-img{
+.banner-img{
 	width: 100%;
 	height: 100%;
-	background-color: blue;
 }
-.bann-list{
+.banner-daohang div:hover{background-color:#ff6700;}
+.banner-daohang{
 	width: 234px;
-	height: 460px;
-	background-color: rgba(0, 0, 0, 0.6);
+	height: 420px;
+	background-color: rgba(0, 0, 0, 0.5);
 	position: absolute;
 	left: 0;
 	top: 0;
+	padding:20px 0 ; 
 }
-.bann-list ul{
-	width: 100%;
-	height: 100%;
-	margin-top: 20px;
-}
-.bann-list ul li{
-	width: 200px;
+.banner-l{
+	width: 204px;
 	height: 42px;
 	font-size: 14px;
-	line-height: 14px;
-	padding-left: 34px;
+	padding-left: 30px;
+	line-height: 42px;
 	color: #ffffff;
-	cursor: pointer;
-	overflow:hidden;
-	top: 0;
-	left: 0;
 }
-.dian{
+.banner-l i{
+	font-size: 14px;
+	float: right;
+	margin-right: 20px;
+	color: #9ba5a9;
+}
+.banner-lunbodian{
+	width: 400px;
 	position: absolute;
-	width: 200px;
-	height: 23px;
-	right: 64px;
-	bottom: 18px;
-	padding: 0;
+	bottom: 20px;
+	right: 30px;
+	background-color: rgba(0, 0, 1);
 }
-.dian ul li{
-	width: 10px;
-	height: 10px;
-	/* background: #000; */
-	border-radius: 50%;
-	float: left;
+.banner-lunbodian1{
+	font-size: 12px;
+	text-align: right;
+	float: right;
+    color: #757575;
 }
-#banner{
+.banner-lunbodian2{
+	width: 6px;
+    height: 6px;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: 2px solid #847375;
+    border-radius: 50%;
+    color: #4e3539;
+}
+#banner1{
 	width: 1226px;
 	height: 184px;
 	background-color: #ffffff;
 	margin: 0 auto;
 }
+.xuangou{
+	width: 228px;
+	height: 164px;
+	background-color: #665e57;
+	float: left;
+	margin-top: 14px;
+	margin-right: 14px;
+	padding: 3px;
+}
+.xuangou-tubiao{
+	float: left;
+    width: 70px;
+    height: 82px;
+    padding: 0 3px;
+    background-color: #665e57;
+}
+.xuangou-tubiao a{
+	padding-left: 6px;
+	float: left;
+	padding-top: 18px;
+}
+.xuangou i:hover{color:#fff;}
+.xuangou-tubiao a:visited{color:#cdcac8;}
+.xuangou-tubiao1 i{
+	padding-left: 21px;
+	height: 24px;
+    font-size: 24px;
+    line-height: 24px;
+}
+
 .tupian2{
 	width: 316px;
 	height: 170px;
@@ -236,10 +258,10 @@
 	margin-top: 14px;
 	margin-right: 14px;
 }
-.tupian3{
+/* .tupian3{
 	width: 234px;
 	background-color: #5f5750;
-}
+} */
 .tupian4{
 	margin-right: 0;
 }
@@ -645,6 +667,7 @@
 	font-size: 14px;
 	text-align: center;
 	margin-top: 16px;
+	color: #333333;
 }
 .rp-l h4 span{
 	color: #fd6700;
@@ -696,7 +719,7 @@
 	font-size: 20px;
 	text-align: center;
 	margin-top: 25px;
-	color: #333;
+	color: #333333;
 
 }
 .c-l h4{
@@ -709,6 +732,7 @@
 	font-size: 14px;
 	text-align: center;
 	margin-top: 20px;
+	color:#fd6700; 
 }
 .c-img{
 	width: 216px;
@@ -751,7 +775,7 @@
 	font-size: 16px;
 	text-align: center;
 	margin-top:32px; 
-	color: #333;
+	color: #333333;
 }
 .video-l h3{
 	font-size: 14px;
@@ -908,7 +932,7 @@
 .info-links{
 	float: right;
 	height: 28px;
-	margin-top: -50px;
+	margin-top: -40px;
 }
 .info-links a{
 	display: block;
