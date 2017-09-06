@@ -72,15 +72,12 @@
 .head-wenzi a{
 	color: #b0b0b0;
 }
-.head-wenzi a:link{
-	color: gold;
-}
+
 .head-wenzi a:hover{
 	color: #ffffff;
 }
-.head-wenzi a:active{
-	color: #000;
-}
+
+
 
 /* 头部结束
 /* 导航开始 */
@@ -190,6 +187,13 @@
 .daohang-wenzi a:hover{
 	color: orangered;
 }
+.searchlogo .searchicon:hover{
+	background-color: #ff6700;
+	
+}
+.searchlogo .searchicon:hover i{
+	color: #fff;
+}
 
 /* 导航结束 */
 
@@ -201,8 +205,10 @@
 	width: 1226px;
 	height: 460px;
 	background-color: #505050;
-	margin: 0 auto;
 	position: relative;
+	left: 62px;
+	display: block;
+
 }
 .bannerlist{
 	width: 234px;
@@ -224,6 +230,17 @@
 	color: white;
 	font-size: 14px;
 }
+.listname:hover{
+	background-color: #ff6700;
+}
+
+.bannerjiantouL:hover,.bannerjiantouR:hover{
+	background-color:#505050;
+	color: #909090;
+}
+
+
+
 .listname i{
 	position: absolute;
 	top: 12px;
@@ -241,6 +258,7 @@
 .bannerjiantouL i{
 	font-size:  41px;
 	color: #303030;
+	line-height: 69px;
 }
 .bannerjiantouR{
 	height: 69px;
@@ -251,6 +269,7 @@
 .bannerjiantouR i{
 	font-size:  41px;
 	color: #303030;
+	line-height: 69px;
 }
 
 
@@ -261,11 +280,28 @@
 	width: 400px;
 	text-align: right;
 	font-size: 12px;
+	float: right;
+	height: 50px;
+/* 	background-color: pink; */
+	position: absolute;
+	bottom: 10px;
+
 }
 
 .bannerpoint{
 	display: inline-block;
-	
+	background-color: #505050;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	float: right;
+	margin:10px 20px 10px 0;
+
+}
+.bannerpoint:hover{
+	border: 3px solid #909090;
+	width: 14px;
+	height: 14px;
 }
 
 
@@ -425,14 +461,20 @@
 	height: 60px;
 /* 	background-color: blue; */
 	float: right;
+	display: inline-block;
+	width: 500px;
 
 }
 .jiadianwenzi{
+	height: 45px;
 	font-size: 15px;
 	color: #333333;
 	line-height: 58px;
-	float: left;
 	margin-right: 32px;
+	float: right;
+}
+.jiadianwenzi:hover{
+	border-bottom: 2px solid #ff6700;
 }
 .jiadianwenzi1{
 	margin-right: 0;
@@ -662,7 +704,32 @@
 	height: 80px;
 /* 	background-color: #101010; */
 	float: right;
+	display: inline-block;
+	width: 500px;
 }
+
+.zhinengwenzi:hover{
+	border-bottom: 2px solid #ff6700;
+}
+
+.zhinengwenzi{
+	font-size: 15px;
+	color: #333333;
+	float: right;
+	margin-left: 32px;
+	margin-top: 42px;
+	height: 25px;
+}
+.zhinengwenzi1{
+	margin-left:0;
+}
+
+
+
+
+
+
+
 
 .zhinengpic{
 	width: 150px;
@@ -770,16 +837,6 @@
 	float: left;
 }
 
-.zhinengwenzi{
-	font-size: 15px;
-	color: #333333;
-	float: right;
-	margin-left: 32px;
-	margin-top: 42px;
-}
-.zhinengwenzi1{
-	margin-left:0;
-}
 
 
 
@@ -956,6 +1013,7 @@
 	font-weight: 400;
 	text-align: center;
 	overflow: hidden;
+	color: #000;
 }
 .neirongfenleibox .desc{
 	height: 40px;
@@ -965,6 +1023,7 @@
 	line-height: 20px;
 	text-align: center;
 	overflow: hidden;
+	color: #333333;
 
 }
 .neirongfenleibox .price{
@@ -972,6 +1031,7 @@
 	margin: 0 10px 15px;
 /* 	background-color: blue; */
 	text-align: center;
+	color: #ff6700;
 }
 .neirongfenleibox .pic{
 	width: 216px;
@@ -982,11 +1042,33 @@
 
 
 .repingbox .pointbox{
-	width: 296px;
+	width: 193px;
 	height: 30px;
-	background-color: black;
+/* 	background-color: black; */
 	margin: 10px auto;
+	padding-right:  103px;
 }
+
+.repingpoint{
+	display: inline-block;
+	background-color: #505050;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	float: right;
+	margin:10px 10px 10px;
+
+}
+.repingpoint:hover{
+	background-color: #ff6700;
+}
+
+
+
+
+
+
+
 
 /* 内容结束 */
 
@@ -1142,9 +1224,10 @@
 	height: 106px;
 	padding: 30px 0;
 	background-color: #f5f5f5;
+	position: relative;
 }
 .info-top{
-	width: 1226px;
+/* 	width: 1226px; */
 	height: 57px;
 	margin: 0 auto;
 	position: absolute;
@@ -1197,5 +1280,27 @@
 	height: 28px;
 	width: auto;
 }
+
+
+.bottomshangbiao{
+	width: 400px;
+	height: 40px;
+/* 	background-color: #00f; */
+	position: absolute;
+	right: 80px;
+	top: 55px;
+	display: inline-block;
+	float: left;
+
+}
+.tubiaobox{
+	width: 85px;
+	height: 28px;
+	float: left;
+
+}
+
+
+
 
 /* 底部结束 */
